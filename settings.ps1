@@ -22,7 +22,7 @@ function dc
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle InlineView
 Set-PSReadLineKeyHandler -Key Tab -Function Complete
-Set-PSReadLineKeyHandler -Chord Delete -Function AcceptSuggestion
+Set-PSReadLineKeyHandler -Chord Ctrl+Spacebar -Function AcceptSuggestion
 
 oh-my-posh init pwsh --config "$HOME\Downloads\catppuccin.omp.json" | Invoke-Expression
 
